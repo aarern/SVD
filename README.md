@@ -1,10 +1,10 @@
 # SVD
 Singular value decomposition walkthrough and a broader linear algebra crash course. 
 
-The Excel file titled "SVD" decomposes a 2x3 or 3x3 matrix. The Python file named "diagonalization" isolates the Eigenvalues and Eigenvectors of that matrix. 
+The Excel file titled "SVD" decomposes 2x3 and 3x3 matrices. The Python file named "diagonalization" isolates the Eigenvalues and Eigenvectors of that matrix. 
 
 # Linear algebra crash course:
-Linear algebra is the study of transformations of vectors and matrices. It's the foundation for how computers calculate, and it can be used for optimization and deeper data analysis.
+Linear algebra studies transformations of vectors and matrices. It's the foundation for how computers calculate, and it can be used for optimization and deeper data analysis.
 
 A vector has direction and magnitude. In space, it's an arrow pointing in some x, y, and z direction with some length.
 
@@ -20,7 +20,7 @@ A matrix is a grid of numbers, with each column representing a unique vector in 
 
 We can apply (multiply) vectors and matrices together to change the position of the arrow, so long as the columns of the matrix equal the rows of the vector.
 
-Going back to our example of the vector v = [0, 1, 0], let's suppose we wanted to change its direction and magnitude so that it's rotated 90 degrees clockwise around the z-axis, and is twice as long.
+Going back to our example of the vector v = [0, 1, 0], suppose we want to change its direction and magnitude so it rotates 90 degrees clockwise around the z-axis and becomes twice as long.
 
 We could multiply the vector v by the matrix A = [0 2 0, 0 0 0, 0 0 0]. The expression Av = [0 2 0, 0 0 0, 0 0 0] [0, 1, 0] simplifies to Av = [0*0 + 1*2 + 0*0, 0*0 + 1*0 + 0*0, 0*0 + 1*0 + 0*0] = [2, 0, 0].
 
