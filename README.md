@@ -24,7 +24,7 @@ Going back to our example of the vector v = [0, 1, 0], suppose we want to change
 
 We could multiply the vector v by the matrix A = [0 2 0, 0 0 0, 0 0 0]. The expression Av = [0 2 0, 0 0 0, 0 0 0] [0, 1, 0] simplifies to Av = [0*0 + 1*2 + 0*0, 0*0 + 1*0 + 0*0, 0*0 + 1*0 + 0*0] = [2, 0, 0].
 
-If a matrix is a combination of vectors, and you can use matrixes to change vectors, could you use matrix A times some different vector to get you vector v? If you take for example the matrix A = [4 3 1, 2 7 2, 6 1 9], and imagine it's three vectors (v1 = [4, 2, 6], v2 = [3, 7, 1], v3 = [1, 2, 9]) in space:
+If a matrix is a combination of vectors, and you can use matrices to change vectors, could you use matrix A times some different vector to get your vector v? If you take, for example, the matrix A = [4 3 1, 2 7 2, 6 1 9], and imagine it's three vectors (v1 = [4, 2, 6], v2 = [3, 7, 1], v3 = [1, 2, 9]) in space:
 
 Let's construct a parallelepiped from the three vectors (a 3-D parallelogram). The determinant is simply the volume of the parallelepiped. If this matrix were 2-D, i.e., its vector columns exist only on the x- and y-axes (v = [x, y]), then the volume of the parallelepiped would be zero.
 
@@ -59,7 +59,7 @@ If A = [5 8 1, 2 5 1, 1 4 5], we can construct the augmented matrix [5 8 1 | 1 0
 
 
 # Transpose:
-Transposes are much more straightforward. It's simply taking the columns of a matrix and making them the rows. For matrix A, its transpose is represented by A^T. Note: any matrix times its transpose creates a square matrix, even if the original matrix A is not a square. 
+Transposes are much more straightforward. It's simply taking the columns of a matrix and making them the rows. For matrix A, its transpose is represented by A^T. Note: any matrix times its transpose creates a square matrix, even if the original matrix A is not square. 
 
 Eigenvectors, Eigenvalues, Diagonalization:
 Starting with Eigenvectors, an Eigenvector is a special vector that does not change direction when transformed by a matrix. For example, consider matrix A = [2 1, 1 2]. If we transform the vector v = [1, 1] by matrix A, we get the new vector A*v = [3, 3]. Notice how the direction of the arrow has not changed (on a 2-D graph, the arrow drawn starts at the origin (0, 0) and goes to (1, 1). If the arrow did change direction, suppose the transformed vector became v = [2, 1]. Since this vector is not parallel to the original vector v = [1, 1], v = [2, 1] is not an eigenvector of matrix A. Since our original transformation produced A*v = [3, 3], and A*v is parallel to v = [1, 1], vector v = [1, 1] is an Eigenvector of the specific Matrix A.
@@ -81,9 +81,9 @@ Thus, P^-1 = -1/9 * [0 -1, -9 -5] = [0 -1/9, 1 5/9].
 
 Our Eigenvalues are λ_1 = -6 and λ_2 = 3, and our diagonal matrix D = [-6 0, 0 3].
 
-We can check our formula A = P*D*P^-1 now by performing the first matrix multiplication P*D. P*D = [-5 1, 9 0]*[-6 0, 0 3]. We'll use the dot product rule to perform the matrix multiplication. Recall that matrices are just collections of vectors. If that's the case, then we'll start by taking vector v = [-6, 0] from matrix D and multiplying it by matrix P. Taking the first row of our first vector v (-6) and multiplying it by the first vector of matrix P ([-5, 9]), our product is P_1*D_1 = [30, -54]. 
+We can check our formula A = P*D*P^-1 now by performing the first matrix multiplication, P*D. P*D = [-5 1, 9 0]*[-6 0, 0 3]. We'll use the dot product rule to perform the matrix multiplication. Recall that matrices are just collections of vectors. If that's the case, then we'll start by taking vector v = [-6, 0] from matrix D and multiplying it by matrix P. Taking the first row of our first vector v (-6) and multiplying it by the first vector of matrix P ([-5, 9]), our product is P_1*D_1 = [30, -54]. 
 
-Applying this same process of multiplying the second eigenvalue by the second eigenvector produces λ_2*ev_2 = 3*[1, 0] = [3, 0]. Thus, our matrix P*D = [30 -6, -54 0]. If we now follow the same steps and multiply by the matrix P^-1, our expression P*D*P^-1 returns the matrix A = [3 5, 0 -6].
+Applying this same process of multiplying the second Eigenvalue by the second Eigenvector produces λ_2*ev_2 = 3*[1, 0] = [3, 0]. Thus, our matrix P*D = [30 -6, -54 0]. If we now follow the same steps and multiply by the matrix P^-1, our expression P*D*P^-1 returns the matrix A = [3 5, 0 -6].
 
 
 # Diagonalization:
