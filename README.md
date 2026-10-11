@@ -1,5 +1,5 @@
 # SVD
-Singular value decomposition walkthrough and a broader linear algebra crash course. 
+A walkthrough of singular value decomposition and a broader linear algebra crash course. 
 
 The Excel file titled "SVD" decomposes 2x3 and 3x3 matrices. The Python file named "diagonalization" isolates the Eigenvalues and Eigenvectors of that matrix. 
 
